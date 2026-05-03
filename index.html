@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DummyData.in — Real-world dummy datasets for developers, AI engineers, and startups building their next Proof of Concept." />
+  <meta property="og:title" content="DummyData.in — Coming Soon" />
+  <meta property="og:description" content="The go-to platform for structured dummy data to power your POC and prototypes." />
+  <meta property="og:type" content="website" />
+  <title>DummyData.in — Coming Soon</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Animated Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">DummyData<span class="logo-dot">.in</span></span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <div class="nav-badge">
+      <span class="badge-dot"></span>
+      Launching Soon
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <main>
+    <section class="hero">
+      <div class="hero-tag">
+        <span class="tag-icon">⚡</span>
+        Built for the AI-First World
+      </div>
+
+      <h1 class="hero-title">
+        Stop searching.<br />
+        <span class="hero-highlight">Start building.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Every great Proof of Concept starts with the right data.
+        <strong>DummyData.in</strong> is your one-stop platform for structured,
+        realistic dummy datasets — so you can focus on the idea, not the prep work.
+      </p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-wrapper">
+        <p class="countdown-label">We're going live in</p>
+        <div class="countdown" id="countdown">
+          <div class="time-block">
+            <span class="time-number" id="days">00</span>
+            <span class="time-label">Days</span>
+          </div>
+          <span class="time-colon">:</span>
+          <div class="time-block">
+            <span class="time-number" id="hours">00</span>
+            <span class="time-label">Hours</span>
+          </div>
+          <span class="time-colon">:</span>
+          <div class="time-block">
+            <span class="time-number" id="minutes">00</span>
+            <span class="time-label">Mins</span>
+          </div>
+          <span class="time-colon">:</span>
+          <div class="time-block">
+            <span class="time-number" id="seconds">00</span>
+            <span class="time-label">Secs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Signup -->
+      <div class="signup-form">
+        <div class="input-group">
+          <input
+            type="email"
+            id="email-input"
+            placeholder="Enter your email — get early access"
+            autocomplete="off"
+          />
+          <button class="btn-notify" id="notify-btn">
+            <span class="btn-text">Notify Me</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+        <p class="signup-note" id="signup-message">No spam. Just a launch ping. 🚀</p>
+      </div>
+    </section>
+
+    <!-- ===== WHAT WE SOLVE ===== -->
+    <section class="problem-section">
+      <div class="section-header">
+        <span class="section-tag">// the problem</span>
+        <h2>Why DummyData.in exists</h2>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="card-icon">🔍</div>
+          <h3>The POC Bottleneck</h3>
+          <p>
+            Developers and AI engineers spend hours scraping, cleaning, and
+            structuring data just to demonstrate an idea. That time kills momentum.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="card-icon">🤖</div>
+          <h3>AI Needs Real-Looking Data</h3>
+          <p>
+            Training demos and client walkthroughs fail when data looks fake.
+            You need contextually rich, domain-specific datasets that feel authentic.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="card-icon">💼</div>
+          <h3>Win More Clients</h3>
+          <p>
+            A polished POC with realistic data closes deals. We remove the barrier
+            so your idea gets the demo it deserves — fast.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT WE'RE BUILDING ===== -->
+    <section class="features-section">
+      <div class="section-header">
+        <span class="section-tag">// what's coming</span>
+        <h2>Everything you need to build faster</h2>
+      </div>
+
+      <div class="features-list">
+        <div class="feature-item">
+          <div class="feature-number">01</div>
+          <div class="feature-content">
+            <h3>Domain-Specific Datasets</h3>
+            <p>E-commerce, Healthcare, Finance, HR, Logistics, and more — pre-structured and ready to download in JSON, CSV, or SQL format.</p>
+          </div>
+          <div class="feature-badge">CSV · JSON · SQL</div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-number">02</div>
+          <div class="feature-content">
+            <h3>AI-Powered Data Generator</h3>
+            <p>Describe what you need in plain English. Our AI generates a custom dataset tailored to your exact schema and use case.</p>
+          </div>
+          <div class="feature-badge">Powered by AI</div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-number">03</div>
+          <div class="feature-content">
+            <h3>One-Click API Integration</h3>
+            <p>Plug dummy data directly into your app via a RESTful API. No more manual imports — just a clean endpoint for instant data.</p>
+          </div>
+          <div class="feature-badge">REST API</div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-number">04</div>
+          <div class="feature-content">
+            <h3>Free Tier — Always</h3>
+            <p>Core datasets and basic generation are free forever. No credit card. No friction. Just data when you need it.</p>
+          </div>
+          <div class="feature-badge">Free Forever</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHO IT'S FOR ===== -->
+    <section class="audience-section">
+      <div class="section-header">
+        <span class="section-tag">// who it's for</span>
+        <h2>Built for builders</h2>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-chip">🧑‍💻 Solo Developers</div>
+        <div class="audience-chip">🤖 AI / ML Engineers</div>
+        <div class="audience-chip">🚀 Startup Founders</div>
+        <div class="audience-chip">🎨 UI/UX Designers</div>
+        <div class="audience-chip">📊 Data Analysts</div>
+        <div class="audience-chip">🏢 IT Consultants</div>
+        <div class="audience-chip">👨‍🎓 Students & Learners</div>
+        <div class="audience-chip">🛠️ Freelancers</div>
+      </div>
+    </section>
+
+    <!-- ===== BOTTOM CTA ===== -->
+    <section class="cta-section">
+      <div class="cta-glow"></div>
+      <h2 class="cta-title">Be the first to know.</h2>
+      <p class="cta-sub">Join the waitlist and get early access when we launch.</p>
+      <div class="input-group cta-input">
+        <input
+          type="email"
+          id="email-input-2"
+          placeholder="your@email.com"
+          autocomplete="off"
+        />
+        <button class="btn-notify" id="notify-btn-2">
+          <span class="btn-text">Get Early Access</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </div>
+      <p class="signup-note" id="signup-message-2">Join 0 developers on the waitlist.</p>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="logo small">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">DummyData<span class="logo-dot">.in</span></span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-tagline">Real data shapes. Zero real risk.</p>
+    </div>
+    <div class="footer-right">
+      <p class="footer-domain">dummydata.in</p>
+      <p class="footer-copy">© 2025 DummyData.in — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
